@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7BA5F2"/>
+      <stop offset="1" stop-color="#4B7BD1"/>
+    </linearGradient>
+    <clipPath id="photo">
+      <rect x="182" y="182" width="148" height="100" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- hintere Karte links -->
+  <g transform="rotate(-8 160 218)">
+    <rect x="86" y="118" width="148" height="200" rx="18" fill="#FFD1DC" stroke="#FFFFFF" stroke-width="10"/>
+  </g>
+
+  <!-- hintere Karte rechts -->
+  <g transform="rotate(8 352 218)">
+    <rect x="278" y="118" width="148" height="200" rx="18" fill="#B5EAD7" stroke="#FFFFFF" stroke-width="10"/>
+  </g>
+
+  <!-- vordere Karte -->
+  <rect x="152" y="150" width="208" height="252" rx="24" fill="#FFFFFF" stroke="#5B8DEF" stroke-width="10"/>
+
+  <!-- Bildfläche mit Sonne und Berg -->
+  <g clip-path="url(#photo)">
+    <rect x="182" y="182" width="148" height="100" fill="#FFE9A8"/>
+    <circle cx="216" cy="212" r="17" fill="#FFB865"/>
+    <path d="M182 282 L246 216 L296 282 Z" fill="#8FCBB3"/>
+    <path d="M254 282 L306 232 L346 282 Z" fill="#6FB79C"/>
+  </g>
+  <rect x="182" y="182" width="148" height="100" rx="12" fill="none" stroke="#5B8DEF" stroke-width="6" stroke-opacity="0.35"/>
+
+  <!-- Textzeilen -->
+  <rect x="182" y="308" width="148" height="18" rx="9" fill="#1E3A5F" fill-opacity="0.55"/>
+  <rect x="182" y="344" width="104" height="18" rx="9" fill="#1E3A5F" fill-opacity="0.35"/>
+</svg>

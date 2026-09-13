@@ -1,0 +1,27 @@
+name = "lernspuren-share"
+main = "worker.js"
+compatibility_date = "2026-06-01"
+
+# R2-Bucket (EU-Jurisdiktion): npx wrangler r2 bucket create lernspuren-share --jurisdiction eu
+[[r2_buckets]]
+binding = "SHARES"
+bucket_name = "lernspuren-share"
+jurisdiction = "eu"
+
+[vars]
+APP_URL = "https://lernspuren.urff.app"
+# Kostenbremse: Gesamtspeicher (MB) und Anzahl Dateien – deutlich unter dem kostenlosen R2-Kontingent (10 GB)
+MAX_TOTAL_MB = "5120"
+MAX_OBJECTS = "1000"
+# Erlaubte Herkunft (CORS und serverseitige Upload-Prüfung): nur die eigene Web-App
+# und der iOS-Wrapper. Für lokale Tests NICHT hier eintragen, sondern beim Start
+# überschreiben:
+#   npx wrangler dev --port 8799 --local --var ALLOWED_ORIGINS:"http://localhost:5173,http://127.0.0.1:5173"
+ALLOWED_ORIGINS = "https://lernspuren.urff.app,app://lernspuren"
+
+# Kostenbremse/DoS-Schutz: max. 10 Uploads pro Minute und IP (Workers Rate Limiting).
+# namespace_id ist frei wählbar, muss aber je Worker eindeutig und stabil bleiben.
+[[ratelimits]]
+name = "UPLOAD_LIMITER"
+namespace_id = "1001"
+simple = { limit = 10, period = 60 }

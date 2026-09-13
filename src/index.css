@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+/* Custom theme */
+@theme {
+  /* Subtle tints (reduced, not too colorful) */
+  --color-pastel-pink: #f1f5f9;
+  --color-pastel-blue: #e5eefc;
+  --color-pastel-green: #eef2f7;
+  --color-pastel-yellow: #f8fafc;
+  --color-pastel-purple: #eef2f7;
+  --color-pastel-orange: #f1f5f9;
+  --color-pastel-mint: #eef2f7;
+
+  /* Primärfarben (abgeglichen mit iOS AppTheme) */
+  --color-primary-blue: #5B8DEF;
+  --color-primary-pink: #FF8FAB;
+  --color-primary-green: #6BCB77;
+  --color-primary-purple: #B088F9;
+  --color-primary-orange: #FFB347;
+  --color-primary-yellow: #FFE066;
+  --color-ink: #1E3A5F;
+  --color-ink-soft: #6B7C93;
+  --color-surface-light: #F8FAFF;
+  --color-surface-canvas: #F0F4FF;
+
+  /* Font: SF Rounded auf Apple-Geräten, sonst abgerundete Fallbacks */
+  --font-family-sans: ui-rounded, 'SF Pro Rounded', 'Nunito', 'Inter', system-ui, sans-serif;
+}
+
+:root {
+  font-family: var(--font-family-sans);
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Touch targets should be at least 44x44px for accessibility */
+.touch-target {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* Animation utilities */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-in {
+  animation-duration: 200ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+}
+
+.slide-in-from-bottom-4 {
+  animation-name: slideInFromBottom;
+}
+
+@keyframes slideInFromBottom2 {
+  from {
+    transform: translateY(0.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-from-bottom-2 {
+  animation-name: slideInFromBottom2;
+}
+
+.zoom-in-95 {
+  animation-name: zoomIn;
+}
+
+/* Scale in from center animation */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.scale-in {
+  animation-name: scaleIn;
+}
+
+/* Pop animation for action buttons */
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pop-in {
+  animation-name: popIn;
+}

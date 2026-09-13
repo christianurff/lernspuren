@@ -1,0 +1,367 @@
+// Englische Übersetzungen (Schlüssel = deutscher Text). Bereich: canvas
+export const EN_CANVAS: Record<string, string> = {
+  // --- Labels aus Konstanten (src/types, src/theme), an der Anzeigestelle übersetzt ---
+  Klein: 'Small',
+  Mittel: 'Medium',
+  Groß: 'Large',
+  Himmel: 'Sky',
+  Wiese: 'Meadow',
+  Sonnenuntergang: 'Sunset',
+  Sand: 'Sand',
+  Lavendel: 'Lavender',
+  Schnee: 'Snow',
+  Ozean: 'Ocean',
+  Pfirsich: 'Peach',
+  Schwarz: 'Black',
+  Rot: 'Red',
+  Orange: 'Orange',
+  Gelb: 'Yellow',
+  Grün: 'Green',
+  Blau: 'Blue',
+  Lila: 'Purple',
+  Pink: 'Pink',
+
+  // --- ShareModal.tsx ---
+  'Link kopiert!': 'Link copied!',
+  'Kopieren fehlgeschlagen': 'Copy failed',
+  'Projekt teilen': 'Share project',
+  'Teile diesen Link oder QR-Code, damit andere': 'Share this link or QR code so others can',
+  'ein Projekt mit keinen Bereichen erstellen.': 'create a project with no areas.',
+  'ein Projekt mit 1 Bereich erstellen.': 'create a project with 1 area.',
+  'ein Projekt mit {n} Bereichen erstellen.': 'create a project with {n} areas.',
+  'Kopiert!': 'Copied!',
+  Kopieren: 'Copy',
+  'Es werden nur Projektname und Bereiche geteilt.': 'Only the project name and areas are shared.',
+  'Karten und Inhalte werden nicht geteilt.': 'Cards and content are not shared.',
+
+  // --- TextEditor.tsx ---
+  'Karte gelöscht': 'Card deleted',
+  'Karte dupliziert': 'Card duplicated',
+  Duplizieren: 'Duplicate',
+  'Größe ändern': 'Resize',
+  Text: 'Text',
+  Bezeichnung: 'Label',
+  'z.B. Notiz 1': 'e.g. Note 1',
+  Inhalt: 'Content',
+  'Schreibe hier deinen Text...': 'Write your text here...',
+  'Karte löschen': 'Delete card',
+
+  // --- InlineEditOverlay.tsx ---
+  'Bezeichnung eingeben...': 'Enter label...',
+  'Text eingeben...': 'Enter text...',
+
+  // --- BackgroundTextEditor.tsx ---
+  'Beschriftung gespeichert': 'Label saved',
+  'Beschriftung erstellt': 'Label created',
+  'Beschriftung gelöscht': 'Label deleted',
+  Beschriftung: 'Label',
+  'Beschriftung eingeben...': 'Enter label...',
+  Größe: 'Size',
+  Farbe: 'Color',
+  Abbrechen: 'Cancel',
+  Speichern: 'Save',
+  'Beschriftung löschen': 'Delete label',
+
+  // --- PlaybackToolbar.tsx ---
+  'Canvas auf diesen Stand zurückgesetzt': 'Canvas reset to this point',
+  'Schritt {current} / {total}': 'Step {current} / {total}',
+  'Geschwindigkeit ändern': 'Change speed',
+  Neustart: 'Restart',
+  Pause: 'Pause',
+  Abspielen: 'Play',
+  Beenden: 'End',
+  'Hier weitermachen': 'Continue from here',
+  'Wirklich zurücksetzen?': 'Really reset?',
+  'Neustart ab hier': 'Restart from here',
+
+  // --- VideoEditor.tsx ---
+  'Video gelöscht': 'Video deleted',
+  'Video kann nicht abgespielt werden': 'Video cannot be played',
+  Video: 'Video',
+  'z.B. Video 1': 'e.g. Video 1',
+  'Video kann nicht geladen werden': 'Video cannot be loaded',
+
+  // --- BottomToolbar.tsx ---
+  'Zeichenmodus beendet': 'Drawing mode ended',
+  'Zeichenmodus aktiviert': 'Drawing mode activated',
+  'Bereichserstellung beendet': 'Area creation ended',
+  'Ziehe auf dem Canvas um einen Bereich zu erstellen': 'Drag on the canvas to create an area',
+  'Verbindungsmodus beendet': 'Connection mode ended',
+  'Tippe auf Ankerpunkte um Karten zu verbinden': 'Tap anchor points to connect cards',
+  Zeichnen: 'Draw',
+  Bereich: 'Area',
+  Einfügen: 'Insert',
+  Verbinden: 'Connect',
+  Anordnen: 'Arrange',
+
+  // --- DrawingToolbar.tsx ---
+  Stift: 'Pen',
+  Radierer: 'Eraser',
+  'Farbe {color}': 'Color {color}',
+  Strichstärke: 'Stroke width',
+  'Strichstärke {width}': 'Stroke width {width}',
+  Zurück: 'Back',
+  Löschen: 'Delete',
+  'Zeichnung gelöscht': 'Drawing deleted',
+
+  // --- CardOptionsModal.tsx ---
+  'Bezeichnung gespeichert': 'Label saved',
+  'Kompakte Ansicht': 'Compact view',
+  'Freie Größen': 'Free sizes',
+  'Karten-Ansicht': 'Card view',
+  'Ausführliche Ansicht': 'Detailed view',
+  'Aus Stapel entfernt': 'Removed from stack',
+  Kartenoptionen: 'Card options',
+  'z.B. Foto 1': 'e.g. Photo 1',
+  Ansicht: 'View',
+  Ausführlich: 'Detailed',
+  Kompakt: 'Compact',
+  Rahmenfarbe: 'Frame color',
+  'Aus Stapel entfernen': 'Remove from stack',
+
+  // --- TaskEditorModal.tsx ---
+  'Aufgabe gespeichert': 'Task saved',
+  'Aufgabe erstellt': 'Task created',
+  'Aufgabe gelöscht': 'Task deleted',
+  Aufgabe: 'Task',
+  Aufgabentext: 'Task text',
+  'Was sollen die Kinder tun?': 'What should the children do?',
+  'Gestufte Tipps': 'Staged hints',
+  '(werden nacheinander aufgedeckt)': '(revealed one at a time)',
+  'Tipp {n}': 'Hint {n}',
+  'Tipp {n} entfernen': 'Remove hint {n}',
+  '+ Tipp hinzufügen': '+ Add hint',
+  Checkliste: 'Checklist',
+  'Schritt {n}': 'Step {n}',
+  'Schritt {n} entfernen': 'Remove step {n}',
+  '+ Schritt hinzufügen': '+ Add step',
+  'Aufgabe löschen': 'Delete task',
+
+  // --- MediaPlayerOverlay.tsx ---
+  'Audio kann nicht abgespielt werden': 'Audio cannot be played',
+  'Audio kann nicht geladen werden': 'Audio cannot be loaded',
+
+  // --- CanvasPage.tsx ---
+  'Projekt wird geladen...': 'Loading project...',
+  'Wird verarbeitet...': 'Processing...',
+  Zuschneiden: 'Crop',
+  'Bild zugeschnitten': 'Picture cropped',
+  "Los geht's!": "Let's go!",
+  'Tippe unten auf': 'Tap',
+  ', um deine erste Karte zu erstellen': 'below to create your first card',
+
+  // --- CardSelectionActions.tsx ---
+  'Tippe auf einen Ankerpunkt einer anderen Karte': 'Tap an anchor point on another card',
+  Optionen: 'Options',
+  Stopp: 'Stop',
+  Vorlesen: 'Read aloud',
+
+  // --- ScenesPanel.tsx ---
+  'Bitte gib einen Namen ein': 'Please enter a name',
+  'Szene gespeichert': 'Scene saved',
+  'Szene "{name}" wiederhergestellt': 'Scene "{name}" restored',
+  'Möchtest du diese Szene löschen?': 'Do you want to delete this scene?',
+  'Szene gelöscht': 'Scene deleted',
+  'Szene umbenannt': 'Scene renamed',
+  Szenen: 'Scenes',
+  'Name der neuen Szene...': 'Name of the new scene...',
+  'Noch keine Szenen gespeichert': 'No scenes saved yet',
+  'Speichere die aktuelle Anordnung als Szene': 'Save the current arrangement as a scene',
+  '1 Karte': '1 card',
+  '{n} Karten': '{n} cards',
+  'Szene wiederherstellen': 'Restore scene',
+  'Szene löschen': 'Delete scene',
+  'Szenen speichern Positionen von Karten und Bereichen': 'Scenes save the positions of cards and areas',
+
+  // --- ExportModal.tsx ---
+  'Export nicht möglich': 'Export not possible',
+  'Datei exportiert': 'File exported',
+  'Export fehlgeschlagen': 'Export failed',
+  'Bild exportiert': 'Image exported',
+  'PDF exportiert': 'PDF exported',
+  'Projekt exportieren': 'Export project',
+  'Exportiere dein Projekt als Bild, PDF oder als vollständige Datei.':
+    'Export your project as an image, PDF, or complete file.',
+  'Format wählen': 'Choose format',
+  'Bild (PNG)': 'Image (PNG)',
+  'Hohe Qualität': 'High quality',
+  'Zum Drucken': 'For printing',
+  'Datei (.lernspur)': 'File (.lernspur)',
+  'Komplett, zum Weitergeben und Importieren': 'Complete, for sharing and importing',
+  'Per Link teilen': 'Share via link',
+  'Komplette Pinnwand hochladen, Link und QR-Code mit Ablaufdatum':
+    'Upload the complete whiteboard, get a link and QR code with an expiration date',
+  'Exportiere...': 'Exporting...',
+  Exportieren: 'Export',
+
+  // --- ZoneSelectionActions.tsx ---
+  'Gruppe gelöscht': 'Group deleted',
+  'Wirklich löschen? Karten bleiben erhalten.': 'Really delete? Cards are kept.',
+  'Bitte zuerst einen Aufgabentext eingeben': 'Please enter a task text first',
+  'Bereich gelöscht': 'Area deleted',
+  'Farbe geändert': 'Color changed',
+  Umbenennen: 'Rename',
+  'Farbe ändern': 'Change color',
+
+  // --- MoreMenu.tsx ---
+  'Lehrkraft-Modus': 'Teacher mode',
+  'Kind-Modus aktiviert': 'Child mode activated',
+  'Lehrkraft-Modus aktiviert': 'Teacher mode activated',
+  Raster: 'Grid',
+  'Raster ausgeblendet': 'Grid hidden',
+  'Raster eingeblendet': 'Grid shown',
+  'Am Raster ausrichten': 'Snap to grid',
+  'Rasterausrichtung deaktiviert': 'Snap to grid disabled',
+  'Am Raster ausrichten aktiviert': 'Snap to grid enabled',
+  'Bereiche normal': 'Normal areas',
+  'Bereiche reduziert': 'Reduced areas',
+  'Bereiche normal angezeigt': 'Areas shown normally',
+  'Bereiche reduziert angezeigt': 'Areas shown reduced',
+  'Gruppen & Bereiche': 'Groups & areas',
+  'Als Vorlage speichern': 'Save as template',
+  'Als Vorlage gespeichert': 'Saved as template',
+  'Speichern fehlgeschlagen': 'Save failed',
+  'Hintergrundbild entfernen': 'Remove background image',
+  'Hintergrundbild entfernt': 'Background image removed',
+  Teilen: 'Share',
+
+  // --- ZoneLayer.tsx ---
+  'Doppelklick für Name': 'Double-tap to name',
+
+  // --- GroupsPanel.tsx ---
+  'Gruppe umbenannt': 'Group renamed',
+  'Möchtest du diese Gruppe/diesen Bereich löschen? Die Karten bleiben erhalten.':
+    'Delete this group/area? The cards will be kept.',
+  'Karte aus Gruppe entfernt': 'Card removed from group',
+  Unbekannt: 'Unknown',
+  '{type}-Karte': '{type} card',
+  'Keine Gruppen/Bereiche vorhanden': 'No groups/areas yet',
+  'Zeichne einen Bereich auf dem Canvas, um eine Gruppe zu erstellen':
+    'Draw an area on the canvas to create a group',
+  'Unbenannte Gruppe': 'Unnamed group',
+  'Karten in dieser Gruppe:': 'Cards in this group:',
+  'Aus Gruppe entfernen': 'Remove from group',
+  Schließen: 'Close',
+
+  // --- ArrangeMenu.tsx ---
+  'Keine Karten vorhanden': 'No cards yet',
+  'Alle Karten gestapelt': 'All cards stacked',
+  'Karten angeordnet': 'Cards arranged',
+  'Keine Gruppen vorhanden': 'No groups yet',
+  'Neueste zuerst': 'Newest first',
+  'Älteste zuerst': 'Oldest first',
+  'Nach Typ': 'By type',
+  'Nach Größe': 'By size',
+  'Nach Name': 'By name',
+  'Nach Gruppen (Venn)': 'By groups (Venn)',
+  'Sortiert: {label}': 'Sorted: {label}',
+  'Sortierung aufgehoben': 'Sorting cleared',
+  'Sortierung aufheben': 'Clear sorting',
+  Stapeln: 'Stack',
+  Sortieren: 'Sort',
+  Verkleinern: 'Zoom out',
+  Zurücksetzen: 'Reset',
+  Vergrößern: 'Zoom in',
+
+  // --- AudioEditor.tsx ---
+  'Sprachnotiz gelöscht': 'Voice note deleted',
+  Sprachnotiz: 'Voice note',
+  'Transkription (automatisch)': 'Transcription (automatic)',
+  Diktieren: 'Dictate',
+  'Automatisch erkannter Text …': 'Automatically recognized text …',
+  'Aufnahme läuft …': 'Recording …',
+
+  // --- DrawingEditorModal.tsx ---
+  'Bitte zuerst etwas zeichnen': 'Please draw something first',
+  'Zeichnung gespeichert': 'Drawing saved',
+  'Zeichnung hinzugefügt': 'Drawing added',
+  Zeichnung: 'Drawing',
+  'Neue Zeichnung': 'New drawing',
+  'z.B. Skizze 1': 'e.g. Sketch 1',
+  Zeichenfläche: 'Drawing area',
+  'Alles löschen': 'Clear all',
+
+  // --- ConnectionsLayer.tsx ---
+  'Verbindung löschen?': 'Delete connection?',
+  'Nochmal tippen zum Löschen': 'Tap again to delete',
+  'Wirklich löschen?': 'Really delete?',
+
+  // --- CanvasToolbar.tsx ---
+  'Hintergrundbild gesetzt': 'Background image set',
+  'Projektname geändert': 'Project name changed',
+  'Doppelklick zum Bearbeiten': 'Double-click to edit',
+  'Entstehung abspielen': 'Play learning trail',
+  Rückgängig: 'Undo',
+  Wiederholen: 'Redo',
+  Mehr: 'More',
+  'Was möchtest du hinzufügen?': 'What would you like to add?',
+  Foto: 'Photo',
+  Galerie: 'Gallery',
+  Audio: 'Audio',
+  Hintergrund: 'Background',
+
+  // --- PhotoEditor.tsx ---
+  'Foto gelöscht': 'Photo deleted',
+  'Farbe {frameColor}': 'Color {frameColor}',
+
+  // --- CanvasStage.tsx ---
+  Gruppenname: 'Group name',
+
+  // --- AddCardModal.tsx ---
+  'Fehler beim Hinzufügen': 'Failed to add',
+  'Aufnahmefehler': 'Recording error',
+  'Kamera nicht verfügbar': 'Camera not available',
+  'Kein Projekt ausgewählt': 'No project selected',
+  'Aufnahme fehlgeschlagen': 'Recording failed',
+  'Fehler beim Speichern': 'Failed to save',
+  'Mikrofon nicht verfügbar': 'Microphone not available',
+  'Textkarte hinzugefügt': 'Text card added',
+  'Nicht unterstütztes Format': 'Unsupported format',
+  'Audioaufnahme hinzugefügt': 'Audio recording added',
+  'Aus Galerie wählen': 'Choose from gallery',
+  'Wähle ein Foto oder Video aus deiner Galerie:': 'Choose a photo or video from your gallery:',
+  'Fotos & Videos': 'Photos & videos',
+  Kamera: 'Camera',
+  'Video aufnehmen': 'Record video',
+  'Aufnahme beenden': 'Stop recording',
+  'Nimm ein kurzes Video auf (max. 30 Sekunden):': 'Record a short video (max. 30 seconds):',
+  Aufnehmen: 'Record',
+  'Aus Galerie': 'From gallery',
+  'Sprachnotiz aufnehmen': 'Record voice note',
+  'Aufnahme läuft...': 'Recording...',
+  'Nimm eine kurze Sprachnotiz auf (max. 60 Sekunden):': 'Record a short voice note (max. 60 seconds):',
+  'Aufnahme starten': 'Start recording',
+  'Foto hinzufügen': 'Add photo',
+  'Wähle eine Quelle für dein Foto:': 'Choose a source for your photo:',
+
+  // --- DocumentationCard.tsx ---
+  'Bezeichnung…': 'Label…',
+  'Aufgabe…': 'Task…',
+  'Tippe zum Schreiben…': 'Tap to write…',
+
+  // Bereits mehrfach verwendete Begriffe (Duplikate der Batches oben, hier konsolidiert)
+  'Foto hinzugefügt': 'Photo added',
+  'Video hinzugefügt': 'Video added',
+
+  // --- weitere Vorkommen (PhotoEditor / TaskEditorModal / DrawingToolbar) ---
+  Fertig: 'Done',
+  'Strichstärke {w}': 'Stroke width {w}',
+  'Anmerkungen entfernen': 'Remove annotations',
+  'z.B. Aufgabe 1': 'e.g. Task 1',
+  Bearbeiten: 'Edit',
+  'Farbe {n}': 'Color {n}',
+  'Video schneiden': 'Trim video',
+  'Video wird geschnitten …': 'Trimming video …',
+  'Video geschnitten': 'Video trimmed',
+  'Dieses Video lässt sich hier nicht schneiden': 'This video cannot be trimmed here',
+  'Text erkennen': 'Recognise text',
+  'Wird erkannt …': 'Recognising …',
+  'Es war nichts zu verstehen. Du kannst den Text auch selbst eintippen.':
+    'Nothing could be understood. You can also type the text yourself.',
+  'Die Spracherkennung ist nicht erlaubt. Du kannst sie in den Einstellungen unter Lernspuren einschalten.':
+    'Speech recognition is not allowed. You can switch it on in Settings under Lernspuren.',
+  'Diese Sprache kann auf dem Gerät nicht offline erkannt werden.':
+    'This language cannot be recognised offline on this device.',
+  'Es wird schon ein Video geschnitten. Versuche es gleich noch einmal.':
+    'A video is already being trimmed. Please try again in a moment.',
+};
